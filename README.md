@@ -1,2 +1,2 @@
 # DLYouTubeDes
-Download a YouTube Description
+Ability to download YouTube description
