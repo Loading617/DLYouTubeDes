@@ -1,0 +1,46 @@
+body {
+    width: 600px;
+    height: 600px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.title {
+    color: #ff0000;
+}
+
+.createdBy {
+    color: #ff0000;
+}
+
+.ver {
+    color: #ff0000;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 4px;
+    padding: 0 9px;
+}
+
+.report-bug {
+    background-color: #ff0000;
+    color: #000;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.github {
+    background-color: #ff0000;
+    color: #000;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+}
