@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "DLYouTubeDes",
+  "version": "1.0",
+  "description": "Download YouTube video descriptions as .txt files.",
+  "icons": {
+    "48": "download-icon.png"
+  },
+  "permissions": [
+    "activeTab",
+    "https://www.youtube.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/watch*"],
+      "js": ["content.js"]
+    }
+  ],
+  "browser_action": {
+    "default_title": "DLYouTubeDes",
+    "default_icon": "dlyoutubedes.png"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
