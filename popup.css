@@ -1,6 +1,9 @@
 body {
     width: 600px;
     height: 600px;
+    background-color: #e8e2d7;
+    text-align: center;
+    font-size: 12px;
 }
 
 .logo {
@@ -9,15 +12,15 @@ body {
 }
 
 .title {
-    color: #ff0000;
+    color: #e8e2d7;
 }
 
 .createdBy {
-    color: #ff0000;
+    color: #e8e2d7;
 }
 
 .ver {
-    color: #ff0000;
+    color: #e8e2d7;
 }
 
 .button-container {
@@ -28,8 +31,8 @@ body {
 }
 
 .report-bug {
-    background-color: #ff0000;
-    color: #000;
+    background-color: #e8e2d7;
+    color: #6a8fbf;
     border: none;
     border-radius: 6px;
     padding: 6px 12px;
@@ -37,8 +40,8 @@ body {
 }
 
 .github {
-    background-color: #ff0000;
-    color: #000;
+    background-color: #e8e2d7;
+    color: #6a8fbf;
     border: none;
     border-radius: 6px;
     padding: 6px 12px;
