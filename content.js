@@ -1,31 +1,26 @@
-function createDownloadButton() {
-    const existing = document.getElementById('yt-desc-download-btn');
-    if (existing) return;
+function downloadDescription() {
+  const descriptionElement = document.querySelector('#description yt-formatted-string');
+  if (!descriptionElement) return alert("No description found!");
 
-    const descBox = document.querySelector('#meta-contents #description');
-    if (!descBox) return;
-
-    const btn = document.createElement('button');
-    btn.id = 'yt-desc-download-btn';
-    btn.innerText = 'Download Description';
-    btn.style.marginTop = '10px';
-    btn.style.padding = '8px';
-    btn.style.border = 'none';
-    btn.style.background = '#FF0000';
-    btn.style.color = 'white';
-    btn.style.borderRadius = '4px';
-    btn.style.cursor = 'pointer';
-
-    btn.onClick = () => {
-        const text = descBox.innerText;
-        const blob = new Blob([text], { type: 'text/plain' });
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = `${document.title.replace(/\s+/g, '_')}_description.txt`;
-        a.click();
-        URL.revokeObjectURL(url);
-    };
-    
-    descBox.parentElement.appendChild(btn);
+  const descriptionText = descriptionElement.innerText;
+  const videoTitle = document.title.replace(" - YouTube", "").replace(/[\\/:*?"<>|]/g, '');
+  const blob = new Blob([descriptionText], { type: 'text/plain' });
+  const link = document.createElement('a');
+  link.href = URL.createObjectURL(blob);
+  link.download = `${videoTitle}.description`;
+  link.click();
 }
+
+const button = document.createElement('button');
+button.className = 'yt-description-download-button';
+button.innerText = 'Download Description';
+button.style.setProperty('--color', '#e8e2d7');
+button.style.marginTop = '10px';
+button.style.padding = '5px';
+button.style.background = 'transparent';
+button.style.border = 'none';
+button.style.cursor = 'pointer';
+button.onclick = downloadDescription;
+
+const target = document.querySelector('#top-level-buttons-computed');
+if (target) target.appendChild(button);
