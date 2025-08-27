@@ -18,7 +18,9 @@
     "48": "./icons/dlyoutubedes_48.png"
   },
   "action": {
-    "default_title": "DLYouTubeDes"
+    "default_title": "DLYouTubeDes",
+    "default_popup": "index.html"
   }
 }
+
 
