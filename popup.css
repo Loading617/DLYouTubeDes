@@ -4,7 +4,7 @@ body {
     background-color: #e8e2d7;
     text-align: center;
     font: "Open Sans";
-    font-size: 12px;
+    font-size: 20px;
 }
 
 .logo {
@@ -48,4 +48,5 @@ body {
     padding: 6px 12px;
     cursor: pointer;
 }
+
 
