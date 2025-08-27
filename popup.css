@@ -1,7 +1,7 @@
 body {
     width: 374px;
     height: 600px;
-    background-color: #e8e2d7;
+    background-color: #a69a8b;
     text-align: center;
     font: "Open Sans";
     font-size: 20px;
@@ -51,7 +51,3 @@ body {
     padding: 6px 12px;
     cursor: pointer;
 }
-
-
-
-
