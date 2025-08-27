@@ -5,6 +5,7 @@ body {
     text-align: center;
     font: "Open Sans";
     font-size: 20px;
+    max-height: 700px;
 }
 
 .logo {
@@ -25,9 +26,11 @@ body {
 }
 
 .button-container {
+    font: "Open Sans";
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    row-gap: 4px;
+    column-gap: 4px;
     padding: 0 9px;
 }
 
@@ -48,6 +51,7 @@ body {
     padding: 6px 12px;
     cursor: pointer;
 }
+
 
 
 
