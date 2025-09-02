@@ -33,5 +33,6 @@ function insertDownloadButton() {
   uploadDateElement.parentNode.insertBefore(button, uploadDateElement.nextSibling);
 }
 
-setTimeout(insertDownloadButton, 2000);
+setTimeout(insertDownloadButton, 4000);
+
 
