@@ -1,5 +1,5 @@
 function insertDownloadButton() {
-  const descriptionContainer = document.querySelector('#description');
+  const descriptionContainer = document.querySelector('ytd-video-secondary-info-renderer');
   if (!descriptionContainer) return;
 
   const uploadDateElement = descriptionContainer.querySelector('span');
@@ -34,3 +34,4 @@ function insertDownloadButton() {
 }
 
 setTimeout(insertDownloadButton, 2000);
+
