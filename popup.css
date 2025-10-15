@@ -1,9 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: "Open Sans";
+}
+
 body {
     width: 374px;
     height: 300px;
     background-color: #a69a8b;
     text-align: center;
-    font: "Open Sans";
     font-size: 20px;
     max-height: 700px;
 }
@@ -51,4 +57,5 @@ body {
     padding: 6px 12px;
     cursor: pointer;
 }
+
 
