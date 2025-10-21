@@ -1,6 +1,6 @@
 {
   "name": "DLYouTubeDes",
-  "description": "Download YouTube video description as .description file.",
+  "description": "Download YouTube video descriptions as .description file.",
   "version": "1.0",
   "manifest_version": 3,
   "permissions": ["scripting", "activeTab"],
@@ -22,6 +22,7 @@
     "default_popup": "index.html"
   }
 }
+
 
 
 
