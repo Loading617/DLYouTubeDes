@@ -6,24 +6,18 @@ link.href = "https://dlyoutubedes.com";
 link.appendChild(image);
 document.body.appendChild(link);
 
-document.querySelector(".button").addEventListener("click", () => {
+document.querySelector(".report-bug-button").addEventListener("click", () => {
     chrome.tabs.create({ url: "https://github.com/Loading617/DLYouTubeDes/issues/new", 
     });
 });
 
-const button = document.querySelector(".button");
-button.addEventListener("click", () => {
-    chrome.tabs.create({ url: "https://github.com/Loading617/DLYouTubeDes/issues/new", 
-    });
-});
-
-const button = document.querySelector(".button");
+const button = document.querySelector(".github-button");
 button.addEventListener("click", () => {
     chrome.tabs.create({ url: "https://github.com/Loading617/DLYouTubeDes", 
     });
 });
 
-/* const button = document.querySelector(".button");
+/* const button = document.querySelector(".changelog-button");
 button.addEventListener("click", () => {
     chrome.tabs.create({ url: "https://dlyoutubedes.com/changelog", 
     });
